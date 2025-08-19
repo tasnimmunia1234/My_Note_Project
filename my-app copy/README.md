@@ -43,7 +43,7 @@ src/
  │    └── NoteItem.tsx      # Single note card
  ├── App.tsx                # Main entry point (contains main folder content)
  ├── Header.tsx             # Main header component (added to main folder)
- ├── types.ts               # Type definitions
+ └── types.ts               # Type definitions
  
 
 
