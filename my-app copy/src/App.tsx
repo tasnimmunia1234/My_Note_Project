@@ -33,24 +33,28 @@ function App() {
   };
 
   const saveNote = () => {
-    if (!title.trim() && !description.trim()) return;
+  const trimmedTitle = title.trim();
+  const trimmedDescription = description.trim();
 
-    if (editingId) {
-      setNote((prev) =>
-        prev.map((n) =>
-          n.id === editingId
-            ? { ...n, title, description, types: selectType }
-            : n
-        )
-      );
-    } else {
-      setNote((prev) => [
-        { id: Date.now().toString(), title, description, types: selectType },
-        ...prev,
-      ]);
-    }
-    reset();
+  if (!trimmedTitle && !trimmedDescription) return;
+
+  const newNote: Note = {
+    id: editingId ?? Date.now().toString(),
+    title: trimmedTitle,
+    description: trimmedDescription,
+    types: selectType,
   };
+
+  setNote((prev) => {
+    if (editingId) {
+      return prev.map((n) => (n.id === editingId ? newNote : n));
+    }
+    return [newNote, ...prev];
+  });
+
+  reset();
+};
+
 
   // const editNote = (note: Note) => {
   //   setEditingId(note.id);
