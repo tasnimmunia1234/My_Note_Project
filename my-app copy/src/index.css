@@ -1,0 +1,14 @@
+.description-scroll::-webkit-scrollbar {
+     /* scrollbar thickness */
+    height: 2.3px;
+  }
+  
+  .description-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(238, 24, 24, 0.4); /* scrollbar color */
+    border-radius: 1px; /* rounded thumb */
+  }
+  
+  .description-scroll::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.1); /* track color */
+  }
+  
