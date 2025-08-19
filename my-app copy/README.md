@@ -42,10 +42,8 @@ src/
  │    ├── NoteList.tsx      # Display list of notes
  │    └── NoteItem.tsx      # Single note card
  ├── App.tsx                # Main entry point (contains main folder content)
- ├── Header.tsx             # Main header component (added to main folder)
+ ├── Header.tsx             # Main header component
  └── types.ts               # Type definitions
- 
-
 
 
 ## Project Interface Screenshot
