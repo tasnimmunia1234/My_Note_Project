@@ -22,18 +22,31 @@ cd notes-app
 - npm run dev
 
 ## Technologies Used
-
 - **Framework / Library:** React, TypeScript  
 - **Styling:** TailwindCSS  
 - **State Management:** React Hooks (`useState`, `useEffect`)  
 - **Storage:** Browser Local Storage  
 - **Build Tool / Package Manager:** Vite, npm  
 
+
 ## Key Features:
 - Add new notes with title, description, and types
 - Edit and delete existing notes
 - Notes persist using local storage
 - Responsive layout for mobile, tablet, and desktop
+
+## Project Structure :
+src/
+ ├── components/
+ │    ├── NoteForm.tsx      # Form for creating/editing notes
+ │    ├── NoteList.tsx      # Display list of notes
+ │    └── NoteItem.tsx      # Single note card
+ ├── App.tsx                # Main entry point (contains main folder content)
+ ├── Header.tsx             # Main header component (added to main folder)
+ ├── types.ts               # Type definitions
+ 
+
+
 
 ## Project Interface Screenshot
 - Screenshot of the project interface showing the notes creation, editing, and listing features.
